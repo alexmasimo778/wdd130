@@ -7,20 +7,45 @@ nav a {
     color: white;
     display: block;
     padding: 20px;
+
 }
 
 h1 {
     color: darkblue;
 }
 
-img {
-    width: 150px;
+main img {
+    width: 100px;
     height: auto;
     border: 1px solid black;
     padding: 2px;
-    box-shadow: 00 30px gray;
+    box-shadow: 2px 2px 8px gray;
 }
 
 p {
-    padding: 10px;
+    padding: 0;
+}
+
+main {
+    max-width: 800px;
+}
+
+aside {
+    width: auto;
+    margin: 2rem;
+    border: 1px solid rgb(0 0 0/ 0.2);
+    padding: 1rem;
+    background-color: darkgrey;
+    color: #444;
+}
+
+aside img {
+    width: 200px;
+    height: auto;
+}
+
+footer {
+    margin-top: 20px;
+    border-top: 1px solid #000;
+    text-align: center;
 }
