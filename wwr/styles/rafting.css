@@ -1,0 +1,100 @@
+:root {
+    --primary-color: #043306;
+    --secondary-color: #066a06;
+    --accent1-color: #043306;
+    --accent2-color: #e9c46a;
+    --heading-font: Georgia, serif;
+    --body-font: Arial, sans-serif;
+    /*Declares the variables and the styles to be used for the entire document.I will just be picking from thses to apply
+    on specific elements*/
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--body-font);
+    color: var(--accent1-color);
+}
+
+header,
+main,
+footer {
+    width: 840px;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: palegoldenrod;
+    padding: 20px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+h1,
+h2 {
+    font-family: var(--heading-font);
+    color: var(--secondary-color);
+}
+
+.hero {
+    margin-top: 20px;
+}
+
+.hero h1 {
+    text-align: center;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 15px;
+}
+
+.hero article {
+    background-color: #f5f5dc;
+    padding: 20px;
+    margin-top: 15px;
+    overflow: auto;
+}
+
+.hero article img {
+    float: right;
+    width: 150px;
+    margin-left: 15px;
+    border: 2px solid #000;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+section {
+    margin: 20px 0;
+    padding: 15px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 30px;
+    padding: 20px;
+}
+
+.socialmedia {
+    margin-top: 10px;
+}
+
+.socialmedia a {
+    text-decoration: none;
+    margin: 0 5px;
+}
