@@ -67,7 +67,7 @@ h2 {
 }
 
 .hero article {
-    position: relative;
+    position: absolute;
     background-color: #f5f5dc;
     padding: 20px;
     margin-top: 15px;
