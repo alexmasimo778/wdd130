@@ -23,15 +23,21 @@ body {
 header,
 main,
 footer {
-    width: 840px;
-    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    margin-top: 30px;
+    padding: 20px;
+    color: var(--primary-color);
+
 }
 
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: palegoldenrod;
+    background-color: var(--accent2-color);
     padding: 20px;
 }
 
@@ -153,12 +159,4 @@ figure {
 figcaption {
     margin-top: 5px;
     font-size: 0.9rem;
-}
-
-/* FOOTER */
-
-footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
