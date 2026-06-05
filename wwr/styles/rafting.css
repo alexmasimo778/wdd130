@@ -5,11 +5,12 @@
     --accent2-color: #e9c46a;
     --heading-font: Georgia, serif;
     --body-font: Arial, sans-serif;
-    /*Declares the variables and the styles to be used for the entire document.I will just be picking from thses to apply
-    on specific elements*/
 }
 
-* {
+/* RESET */
+*,
+*::before,
+*::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -20,25 +21,20 @@ body {
     color: var(--accent1-color);
 }
 
-header,
-main,
-footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    text-align: center;
-    margin-top: 30px;
-    padding: 20px;
-    color: var(--primary-color);
-
-}
-
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: var(--accent2-color);
     padding: 20px;
+    margin-top: 30px;
+    color: var(--primary-color);
+}
+
+main {
+    margin-top: 30px;
+    padding: 20px;
+
 }
 
 nav ul {
@@ -53,12 +49,14 @@ nav a {
     font-weight: bold;
 }
 
+/* headings */
 h1,
 h2 {
     font-family: var(--heading-font);
     color: var(--secondary-color);
 }
 
+/* Hero section */
 .hero {
     position: relative;
 }
@@ -84,39 +82,25 @@ h2 {
     bottom: 20px;
     left: 20px;
     right: 20px;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, 0.9);
     padding: 15px;
+    display: flex;
+    gap: 15px;
+    align-items: center;
 }
 
 .hero article img {
-    float: right;
     width: 150px;
 }
 
+/* SECTIONS */
 section {
     margin: 20px 0;
     padding: 15px;
     color: var(--accent1-color);
 }
 
-footer {
-    text-align: center;
-    margin-top: 30px;
-    padding: 20px;
-    color: var(--accent2-color);
-}
-
-.socialmedia {
-    margin-top: 10px;
-}
-
-.socialmedia a {
-    text-decoration: none;
-    margin: 0 5px;
-}
-
-/* HISTORY SECTION */
-
+/* HISTORY */
 .history {
     text-align: center;
 }
@@ -133,8 +117,7 @@ footer {
     height: auto;
 }
 
-/* ADVENTURE SECTION */
-
+/* ADVENTURE */
 .adventure {
     text-align: center;
 }
@@ -148,7 +131,7 @@ footer {
 
 .adventure-gallery img {
     width: 100%;
-    height: 120px;
+    aspect-ratio: 1 / 1;
     object-fit: cover;
 }
 
@@ -159,4 +142,24 @@ figure {
 figcaption {
     margin-top: 5px;
     font-size: 0.9rem;
+}
+
+.socialmedia {
+    margin-top: 10px;
+}
+
+.socialmedia a {
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 30px;
+    padding: 20px;
+    background-color: var(--primary-color);
+    color: white;
 }
