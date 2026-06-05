@@ -5,6 +5,9 @@
     --accent2-color: #e9c46a;
     --heading-font: Georgia, serif;
     --body-font: Arial, sans-serif;
+    --white: #ffffff;
+    --primary-transparent: rgba(4, 51, 6, 0.8);
+    --white-transparent: rgba(255, 255, 255, 0.9);
 }
 
 /* RESET */
@@ -72,8 +75,8 @@ h2 {
     top: 20px;
     width: 100%;
     text-align: center;
-    color: white;
-    background-color: rgba(4, 51, 6, 0.8);
+    color: var(--white);
+    background-color: var(--primary-transparent);
     padding: 10px;
 }
 
@@ -82,7 +85,7 @@ h2 {
     bottom: 20px;
     left: 20px;
     right: 20px;
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: var(--white-transparent);
     padding: 15px;
     display: flex;
     gap: 15px;
@@ -161,5 +164,5 @@ footer {
     margin-top: 30px;
     padding: 20px;
     background-color: var(--primary-color);
-    color: white;
+    color: var(--white);
 }
