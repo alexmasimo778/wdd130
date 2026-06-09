@@ -150,6 +150,15 @@ figcaption {
     font-size: 0.9rem;
 }
 
+.map {
+    float: center;
+}
+
+.employees {
+    position: relative border-box:auto;
+
+}
+
 .socialmedia {
     margin-top: 10px;
 }

@@ -3,118 +3,110 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="description" content="Contact Us Page">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us | Masimo Water Rafting Company Limited</title>
-    <meta name="description"
-      content="Learn about Masimo Water Rafting Company Limited, our history, mission, creed, and exciting rafting adventures.">
-    <meta name="author" content="Masimo Alex">
+    <title>Contact Us | White Water Rafting</title>
     <link rel="stylesheet" href="styles/rafting.css">
 </head>
 
 <body>
 
+    <!-- Header -->
     <header>
-        <img src="images/picture.webp" alt="Rafting site logo" width="200">
-
+        <img src="images/picture.webp" alt="Rafting Company Logo">
         <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="trips.html">Trips</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
-            </ul>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="trips.html">Trips</a>
+            <a href="contact.html">Contact Us</a>
         </nav>
     </header>
 
     <main>
 
-        <div class="hero">
+        <h1>Contact Us</h1>
 
-            <img src="images/hero-image.webp" alt="White water rafting adventure" width="200">
-
-            <h1>Contact Us</h1>
-
-
-        </div>
-
-        <section class="Company information">
+        <!-- Company Information -->
+        <section class="company-info">
             <h2>Company Information</h2>
-
-            <div class="company-information-content">
-                <p>
-                    <strong>Address:</strong>Plot 124, Pallisa, Uganda, East Africa
-                </p>
-                <p>
-                    <stron>Phone:</stron>+25674015333
-                </p>
-                <p><strong>Email:</strong>masimorating@gmail.com</p>
-
-            </div>
+            <p><strong>Address:</strong> plot 203, Mbale, Uganda</p>
+            <p><strong>Phone:</strong> +256 700 125667</p>
+            <p><strong>Email:</strong> masimowaterrafting@gmail.com</p>
         </section>
 
+        <!-- Google Map -->
         <section class="map">
-            <h2>Locate Us!</h2>
-            <iframe> </iframe>
+            <h2>Find Us</h2>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15955.06365380161!2d32.5825!3d0.3476!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x177dbb8b0c1c8f5%3A0x5bb5c0d6d0f5b5d0!2sKampala%2C%20Uganda!5e0!3m2!1sen!2sug!4v1718000000000!5m2!1sen!2sug"
+              width="400" height="200" style="border:0;" allowfullscreen="" loading="lazy">
+            </iframe>
         </section>
 
-        <section class="Employee">
-            <h2>Our Warm Team</h2>
-            <div class="employee profiles">
-                <figure>
-                    <img src="images/profile.jpg" alt="employee 1" width="200">
+        <!-- Employee Profiles -->
+        <section class="employees">
+            <h2>Meet Our Team</h2>
 
-                    </figcaption>Masimo Alex-Managing Director</figcaption>
-                </figure>
+            <figure>
+                <img src="images/profile.jpg" alt="Operations Manager" width="200">
+                <figcaption>Masimo Alex - Operations Manager</figcaption>
+            </figure>
 
-                <figure>
-                    <img src="images/gabriel.png" alt="employee 2" width="200">
-                    <figcaption>Gabriek Ipalitai-Company Executive Secretary</figcaption>
-                </figure>
+            <figure>
+                <img src="images/gabriel.png" alt="Lead River Guide" width="200">
+                <figcaption>Ipalitai Gabriel - Lead River Guide</figcaption>
+            </figure>
 
-                <figure>
-                    <img src="images/opuche.jpg" alt="employee 3" width="200">
-                    <figcaption> Opuche Joan-Operations And Booking Officer</figcaption>
-                </figure>
-            </div>
+            <figure>
+                <img src="images/opuche.jpg" alt="Customer Service Representative" width="200">
+                <figcaption>Opuche Joan - Customer Service Representative</figcaption>
+            </figure>
         </section>
 
-        <div class="Contact-Form">
-            <h2>Fill this form so that our customer reprentative will contact you</h2>
-            <label for="username">Username:</label>
-            <input type="text" id="username" name="username" required>
-            <label for="email">Email</label>
-            <input type="text" id="email" name="email" required>
-            <fieldset>
-                <legend>
-                    Purpose of the message
-                </legend>
-                <!Groups related controls or contents or natures!>
+        <!-- Contact Form -->
+        <section class="contact-form">
+            <h2>Send Us a Message</h2>
+
+            <form action="#" method="post">
+
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+
+                <label for="email">User Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <fieldset>
+                    <legend>Purpose of the Message</legend>
+
+                    <input type="radio" id="general" name="purpose" value="general inquiry" checked>
                     <label for="general">General Inquiry</label>
-                    <input type="radio" id="general induiry" name="pupose of the message"
-                      value="General Inquiry" </fieldset>
-        </div>
 
+                    <input type="radio" id="reservation" name="purpose"
+                      value="reservation question">
+                    <label for="reservation">Reservation Question</label>
+
+                    <input type="radio" id="suggestion" name="purpose" value="website suggestion">
+                    <label for="suggestion">Website Suggestion</label>
+                </fieldset>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <label>
+                    <input type="checkbox" name="newsletter">
+                    Please subscribe me to the monthly newsletter
+                </label>
+
+                <button type="submit">Submit Message</button>
+
+            </form>
         </section>
-
 
     </main>
 
+    <!-- Footer -->
     <footer>
-        <p>©2026🍖Masimo Water Rafting Company Limited🍖Masimo Alex</p>
-
-        <nav class="socialmedia">
-            <a href="https://twitter.com">
-                <img src="images/twitter.jpg" alt="Twitter logo" width="50">
-            </a>
-
-            <a href="https://whatsapp.com">
-                <img src="images/whatsapp.png" alt="WhatsApp logo" width="30">
-            </a>
-
-            <a href="https://linkedin.com">
-                <img src="images/linkedln.jpg" alt="LinkedIn logo" width="30">
-            </a>
-        </nav>
+        <p>©copy🍖2026🍖White Water Rafting 🍖Masimo Alex</p>
     </footer>
 
 </body>
