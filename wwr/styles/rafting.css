@@ -163,6 +163,24 @@ figcaption {
     margin: 0 5px;
 }
 
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.button {
+    background-color: #066a06;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.hoover {
+    background-color: #043306;
+}
+
 footer {
     display: flex;
     justify-content: center;
