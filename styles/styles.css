@@ -44,8 +44,46 @@ aside img {
     height: auto;
 }
 
+.home-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.home-grid img {
+    width: 100%;
+    height: auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--accent2-color);
+    padding: 20px;
+}
+
 footer {
-    margin-top: 20px;
-    border-top: 1px solid #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     text-align: center;
+    margin-top: 30px;
+    padding: 20px;
+    color: var(--primary-color);
+}
+
+footer {
+    color: var(--primary-color);
+}
+
+.home-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.home-grid img {
+    width: 100%;
+    height: auto;
 }
